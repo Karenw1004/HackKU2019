@@ -5,7 +5,14 @@ threadsafe: true
 handlers:
 - url: /.*
   script: main.app
-
+  
 - url: /favicon\.ico
   static_files: static/images/favicon.ico
   upload: static/images/favicon\.ico
+
+
+libraries:
+- name: jinja2
+  version: latest
+
+
